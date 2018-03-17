@@ -1,0 +1,28 @@
+
+spring:
+  datasource:
+	type: com.alibaba.druid.pool.DruidDataSource
+	url: jdbc:mysql://120.78.172.165:3306/sohome?characterEncoding=utf8&useSSL=true
+	username: root
+	password: root
+	driverClassName: com.mysql.cj.jdbc.Driver
+	minIdle: 1
+	maxActive: 2
+	initialSize: 1
+	timeBetweenEvictionRunsMillis: 3000
+	minEvictableIdleTimeMillis: 300000
+	validationQuery: SELECT 'ZTM' FROM DUAL
+	testWhileIdle: true
+	testOnBorrow: false
+	testOnReturn: false
+  
+    
+#日志
+logging:  
+  level:  
+    org:  
+      hibernate:  
+        SQL: DEBUG  
+        type:  
+          descriptor:  
+            sql: TRACE
