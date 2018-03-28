@@ -1,5 +1,7 @@
 package com.socode.service;
 
+import org.springframework.data.domain.Page;
+
 import com.socode.entity.HouseEntity;
 
 
@@ -12,5 +14,5 @@ import com.socode.entity.HouseEntity;
  */
 public interface HouseService {
 	
-	
+	public Page<HouseEntity> listByPage(int page,int size);
 }

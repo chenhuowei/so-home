@@ -5,6 +5,7 @@ import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -23,47 +24,46 @@ public class UserEntity implements Serializable {
 	
 	//用户唯一id
 	@Id  
-	@Column(name="id",nullable = false)  
-	@GeneratedValue 
-	private Integer id;
+	@GeneratedValue(strategy=GenerationType.IDENTITY) 
+	private Long id;
 	//用户名
-	@Column
+	@Column(name="name")
 	private String name;
 	//电子邮箱
-	@Column
+	@Column(name="email")
 	private String email;
 	//电话号码
-	@Column
+	@Column(name="phone_number")
 	private String phoneNumber;
 	//密码
-	@Column
+	@Column(name="password")
 	private String password;
 	//用户状态 0-正常 1-封禁
-	@Column
+	@Column(name="status")
 	private Integer status;
 	//用户账号创建时间
-	@Column
+	@Column(name="create_time")
 	private Date createTime;
 	//上次登录时间
-	@Column
+	@Column(name="last_login_time")
 	private Date lastLoginTime;
 	//上次更新记录时间
-	@Column
+	@Column(name="last_update_time")
 	private Date lastUpdateTime;
 	//头像
-	@Column
+	@Column(name="avatar")
 	private String avatar;
 
 	/**
 	 * 设置：用户唯一id
 	 */
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 	/**
 	 * 获取：用户唯一id
 	 */
-	public Integer getId() {
+	public Long getId() {
 		return id;
 	}
 	/**

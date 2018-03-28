@@ -33,6 +33,22 @@ public class IndexController {
 		return mv;
 	}
 	
+	@GetMapping("user/list.html")
+	public ModelAndView userListPage() {
+		
+		ModelAndView mv = new ModelAndView("admin/user/list");
+		
+		return mv;
+	}
+	
+	@GetMapping("house/list.html")
+	public ModelAndView houseListPage() {
+		
+		ModelAndView mv = new ModelAndView("admin/house/list");
+		
+		return mv;
+	}
+	
 	
 	
 	

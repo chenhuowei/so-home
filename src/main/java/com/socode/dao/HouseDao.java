@@ -2,6 +2,8 @@ package com.socode.dao;
 
 import com.socode.entity.HouseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
+import org.springframework.data.repository.CrudRepository;
 
 /**
  * 房屋信息表

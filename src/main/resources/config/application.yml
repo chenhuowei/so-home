@@ -1,5 +1,5 @@
 server:
-  port: 80
+  port: 18081
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -30,5 +30,5 @@ spring:
     cache: false
     settings: 
       template_update_delay: 0
-    
+  
 #日志
