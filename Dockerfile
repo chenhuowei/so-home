@@ -7,8 +7,8 @@ RUN yum install -y wget
 
 # 安装JDK
 RUN mkdir /var/tmp/jdk
-RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  -P /var/tmp/jdk http://download.oracle.com/otn-pub/java/jdk/8u161-b14/jdk-8u161-linux-x64.tar.gz
-RUN tar xzf /var/tmp/jdk/jdk-8u161-linux-x64.tar.gz -C /var/tmp/jdk && rm -rf /var/tmp/jdk/jdk-8u161-linux-x64.tar.gz
+RUN wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie"  -P /var/tmp/jdk http://download.oracle.com/otn-pub/java/jdk/8u162-b14/jdk-8u162-linux-x64.tar.gz
+RUN tar xzf /var/tmp/jdk/jdk-8u162-linux-x64.tar.gz -C /var/tmp/jdk && rm -rf /var/tmp/jdk/jdk-8u162-linux-x64.tar.gz
 
 
 #spring boot 不需要以下配置
