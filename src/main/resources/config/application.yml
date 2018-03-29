@@ -4,8 +4,8 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://120.78.172.165:3306/sohome?characterEncoding=utf8&useSSL=true
-    username: root
-    password: root
+    username: socode
+    password: socode
     driverClassName: com.mysql.cj.jdbc.Driver
     minIdle: 1
     maxActive: 2
